@@ -1,0 +1,9 @@
+name: example
+on:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ github.event_name }}
+      - run: sleep 10
